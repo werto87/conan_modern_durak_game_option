@@ -7,7 +7,7 @@ required_conan_version = ">=1.51.1"
 
 
 class ConanHeaderOnly(ConanFile):
-    name = "lib_name"
+    name = "modern_durak_game_option"
     package_type = "header-library"
     settings = "os", "arch", "compiler", "build_type"
     generators = "CMakeDeps", "CMakeToolchain"
