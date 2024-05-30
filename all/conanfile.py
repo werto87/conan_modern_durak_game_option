@@ -22,7 +22,8 @@ class ConanHeaderOnly(ConanFile):
         self.options["fmt"].header_only = True
 
     def requirements(self):
-        self.requires("boost/1.84.0")
+        self.requires("boost/[<2]")
+        self.requires("durak/1.0.5")
 
     def layout(self):
         cmake_layout(self, src_folder=self.name + "-" + str(self.version))
