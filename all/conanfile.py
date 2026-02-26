@@ -22,8 +22,8 @@ class ConanHeaderOnly(ConanFile):
         self.options["fmt"].header_only = True
 
     def requirements(self):
-        self.requires("durak/[<2]")
-        self.requires("login_matchmaking_game_shared/0.0.1")
+        self.requires("durak/2.1.1")
+        self.requires("login_matchmaking_game_shared/latest")
 
     def layout(self):
         cmake_layout(self, src_folder=self.name + "-" + str(self.version))
